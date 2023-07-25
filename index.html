@@ -31,15 +31,116 @@
     <script src="https://kit.fontawesome.com/29beee64c9.js" crossorigin="anonymous"></script>
     <!-- Vanila Css -->
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+        }
 
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Hello word</h1>
-        <h2>I am Md. Rakibul Hasan Raza</h2>
+    <header class="max-w-screen-xl mx-auto m-10">
+        <div class="navbar max-w-screen-xl bg-[#F85559] py-5 px-10 w-full mx-auto rounded-full ">
+            <div class="navbar-start">
+                <!-- logo image show small device navbar start -->
+                <div class="space-x-3 flex items-center  md:hidden lg:hidden">
+                    <a><img class="w-8 md:w-10 lg:w-14" src="./images/logo.png" alt="" srcset=""></a>
+                    <h2 class="text-3xl md:text-4xl lg:4xl  font-bold text-white">Fruit Burst</h2>
+                   </div>
+                  <!-- main menu item -->
+                  <div class="navbar-center hidden lg:flex lg_hidden">
+                    <ul class="menu menu-horizontal px-1">
+                      <li class="text-white text-lg font-medium"><a>Home</a></li>
+                      <li tabindex="0">
+                        <details>
+                          <summary class="text-white text-lg font-medium">About Us</summary>
+                          <ul class="p-2">
+                              <li><a>Organic Fruits</a></li>
+                              <li><a> Fruit Platters & Baskets</a></li>
+                              <li><a> Seasonal Specials</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                      <li tabindex="0">
+                        <details>
+                          <summary class="text-white text-lg font-medium">Shop</summary>
+                          <ul class="p-2">
+                              <li><a>Mango Tango</a></li>
+                            <li><a>Crunchy Apple Sticks</a></li>
+                            <li><a>Luscious Lychees</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                      <li tabindex="0">
+                        <details>
+                          <summary class="text-white text-lg font-medium">All Fruits</summary>
+                          <ul class="p-2">
+                              <li><a>Apple</a></li>
+                            <li><a>Orange</a></li>
+                            <li><a>Mango</a></li>
+                            <li><a>Strawberry</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="navbar-center">
+               <div class="space-x-3 flex items-center invisible md:block lg:block ">
+                <a><img class="w-8 md:w-10 lg:w-14" src="./images/logo.png" alt="" srcset=""></a>
+                <h2 class="text-3xl md:text-4xl lg:4xl  font-bold text-white">Fruit Burst</h2>
+               </div>
+            </div>
+            
+            <div class="navbar-end ">
+                <div class="relative mt-4 md:mt-0 hidden">
+                    <span class="absolute inset-y-0 right-0 flex items-center pr-4">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+    
+                    <input type="text" class="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-full focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Search">
+                </div>
+                <!-- small device show -->
+                <div class="dropdown md:hidden lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost md:justify-end  lg:hidden">
+                        <i class="text-2xl font-bold fa-solid fa-bars"></i>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content z-[1] shadow bg-base-100 rounded-box">
+                      <li><a>Home</a></li>
+                      <li>
+                        <a>About Us</a>
+                        <ul class="p-2">
+                          <li><a>Organic Fruits</a></li>
+                          <li><a> Fruit Platters & Baskets</a></li>
+                          <li><a> Seasonal Specials</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a>Shop</a>
+                        <ul class="p-2">
+                          <li><a>Mango Tango</a></li>
+                          <li><a>Crunchy Apple Sticks</a></li>
+                          <li><a>Luscious Lychees</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a>All Fruits</a>
+                        <ul class="p-2">
+                          <li><a>Apple</a></li>
+                          <li><a>Orange</a></li>
+                          <li><a>Mango</a></li>
+                          <li><a>Strawberry</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
     </header>
+     
 </body>
 
 </html>
