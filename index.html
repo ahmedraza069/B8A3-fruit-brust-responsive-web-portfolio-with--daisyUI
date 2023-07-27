@@ -49,75 +49,79 @@
 </head>
 
 <body>
-  <header class="hide max-w-screen-xl mx-auto mb-10">
-    <div class="navbar max-w-screen-xl bg-[#F85559] py-5 px-10 w-full mx-auto rounded-full ">
-      <div class="navbar-start">
-        <!-- main menu item -->
-        <div class="navbar-center lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li class="text-white text-lg font-medium"><a>Home</a></li>
-            <li tabindex="0">
-              <details>
-                <summary class="text-white text-lg font-medium">About Us</summary>
-                <ul class="p-2">
-                  <li><a>Organic Fruits</a></li>
-                  <li><a> Fruit Platters & Baskets</a></li>
-                  <li><a> Seasonal Specials</a></li>
-                </ul>
-              </details>
-            </li>
-            <li tabindex="0">
-              <details>
-                <summary class="text-white text-lg font-medium">Shop</summary>
-                <ul class="p-2">
-                  <li><a>Mango Tango</a></li>
-                  <li><a>Crunchy Apple Sticks</a></li>
-                  <li><a>Luscious Lychees</a></li>
-                </ul>
-              </details>
-            </li>
-            <li tabindex="0">
-              <details>
-                <summary class="text-white text-lg font-medium">All Fruits</summary>
-                <ul class="p-2">
-                  <li><a>Apple</a></li>
-                  <li><a>Orange</a></li>
-                  <li><a>Mango</a></li>
-                  <li><a>Strawberry</a></li>
-                </ul>
-              </details>
-            </li>
-          </ul>
+  <!-- header section -->
+  <header class="max-w-screen-xl mx-auto px-2 md:px-4 lg:px-8 my-6">
+    <div class="navbar bg-[#F85559] max-w-screen-xl mx-auto rounded-full px-4 py-4">
+      <div class="navbar-start hidden md:hidden lg:flex">
+        <ul class="menu menu-horizontal text-white text-lg px-1">
+          <li><a>Home</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Shop</a></li>
+          <li><a>All fruits</a></li>
+        </ul>
+        <div class=" md:block lg:hidden space-x-2 flex items-center">
+          <a><img class="w-8 md:w-10 lg:w-14" src="./images/logo.png" alt="" srcset=""></a>
+          <h2 class="text-3xl md:text-4xl font-bold text-white">Fruit Burst</h2>
         </div>
       </div>
+      <!-- small and medium device show items and seacrh -->
       <div class="navbar-center">
-        <div class="space-x-3 flex items-center">
+        <!-- large device image icon middle point -->
+        <div class="space-x-2 flex items-center">
           <a><img class="w-8 md:w-10 lg:w-14" src="./images/logo.png" alt="" srcset=""></a>
           <h2 class="text-3xl md:text-4xl font-bold text-white">Fruit Burst</h2>
         </div>
       </div>
 
-      <div class="navbar-end">
-        <div class="relative mt-4 md:mt-0">
-          <span class="absolute inset-y-0 right-0 flex items-center pr-4">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </span>
-
-          <input type="text"
-            class="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-full focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300"
-            placeholder="Search">
+      <div class="navbar-end md:flex-1">
+        <!-- small and medium device hidden large device block -->
+        <div class="navbar-center">
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <i class=" text-lg fa-solid fa-bars"></i>
+            </label>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+              <!-- HIDDEN SEARCH BAR SMALL DEVICE -->
+              <div class="relative mt-4 md:mt-0">
+                <input type="text" class="w-full py-2 px-2 pr-3 text-gray-700 bg-white border rounded-full focus:outline"
+                  placeholder="Search here">
+                <span class="absolute inset-y-0 right-0 flex items-center pr-3">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+              </div>
+            </ul>
+          </div>
         </div>
-
+   <div class="hidden md:hidden lg:block">
+    <div class="relative mt-4 md:mt-0">
+      <input type="text" class="w-full py-2 px-10 pr-3 text-gray-700 bg-white border rounded-full focus:outline"
+        placeholder="Search here">
+      <span class="absolute inset-y-0 right-0 flex items-center pr-3">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </span>
+    </div>
+   </div>
       </div>
     </div>
   </header>
+  <!-- main section -->
   <main>
     <!-- slider -->
     <section class="max-w-screen-xl mx-auto px-2 md:px-4 lg:px-8 mb-10">
       <div class="carousel w-full relative">
         <!-- slider 1 -->
         <div id="slide1" class="carousel-item relative w-full">
-          <div class="hero w-full" style="background-image: url(./images/banner1.png);">
+          <div class="hero md:min-h-[400px] lg:min-h-[600px] w-full"
+            style="background-image: url(./images/banner1.png);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
@@ -486,7 +490,7 @@
       </div>
 
     </section>
-
+    <!-- Why Choose Section -->
     <section class="max-w-screen-xl mx-auto px-2 md:px-4 lg:px-8 mb-10">
       <div>
         <div class="container mx-auto">
@@ -692,23 +696,29 @@
       <h2 class="text-3xl md:text-4xl font-bold text-white">Fruit Burst</h2>
     </div>
     <div class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-6 gap-5">
-      <a class="link link-hover text-center">Home</a> 
-      <a class="link link-hover">About us</a> 
-      <a class="link link-hover">Shop</a> 
-      <a class="link link-hover">All Fruits</a> 
+      <a class="link link-hover text-center">Home</a>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Shop</a>
+      <a class="link link-hover">All Fruits</a>
       <a class="link link-hover text-center flex justify-center">Support</a>
       <a class="link link-hover flex justify-center">My Account</a>
-    </div> 
+    </div>
     <div>
       <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 items-center min-w-10  gap-4">
-        <a class="text-2xl w-10 h-10 flex items-center justify-center rounded-full bg-[#F85559]"><i class="fa-brands fa-facebook"></i></a> 
-        <a  class="text-2xl w-10 h-10 flex items-center justify-center rounded-full bg-[#F85559]"><i class="fa-brands fa-twitter"></i></a> 
-        <a  class="text-2xl w-10 h-10 flex items-center justify-center rounded-full bg-[#F85559]"><i class="fa-brands fa-youtube"></i></a>
-        <a  class="text-2xl w-10 h-10 flex items-center justify-center rounded-full bg-[#F85559]"><i class="fa-brands fa-instagram"></i></a>
-        <a  class="text-2xl w-10 h-10 flex items-center justify-center rounded-full bg-[#F85559]"><i class="fa-brands fa-linkedin"></i></a>
-        <a  class="text-2xl w-10 h-10 flex items-center justify-center rounded-full bg-[#F85559]"><i class="fa-brands fa-github"></i></a>
+        <a class="text-2xl w-10 h-10 flex items-center justify-center rounded-full bg-[#F85559]"><i
+            class="fa-brands fa-facebook"></i></a>
+        <a class="text-2xl w-10 h-10 flex items-center justify-center rounded-full bg-[#F85559]"><i
+            class="fa-brands fa-twitter"></i></a>
+        <a class="text-2xl w-10 h-10 flex items-center justify-center rounded-full bg-[#F85559]"><i
+            class="fa-brands fa-youtube"></i></a>
+        <a class="text-2xl w-10 h-10 flex items-center justify-center rounded-full bg-[#F85559]"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a class="text-2xl w-10 h-10 flex items-center justify-center rounded-full bg-[#F85559]"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a class="text-2xl w-10 h-10 flex items-center justify-center rounded-full bg-[#F85559]"><i
+            class="fa-brands fa-github"></i></a>
       </div>
-    </div> 
+    </div>
     <div>
       <p>Copyright &copy; 2023 - All right reserved by Programming Hero</p>
     </div>
@@ -736,12 +746,12 @@
 
 
 
+<!-- 
 
 
-
-
-<!-- <div class="dropdown">
-<label tabindex="0" class="btn btn-ghost md:justify-end  lg:hidden">
+<!-- 
+<!-- <div class="dropdown"> -->
+<!-- <label tabindex="0" class="btn btn-ghost md:justify-end  lg:hidden">
   <i class="text-2xl font-bold fa-solid fa-bars"></i>
 </label>
 <ul tabindex="0" class="menu menu-sm dropdown-content z-[1] shadow bg-base-100 rounded-box">
@@ -772,4 +782,4 @@
   </ul>
 </li>
 </ul>
-</div>  -->
+</div>  --> --> -->
