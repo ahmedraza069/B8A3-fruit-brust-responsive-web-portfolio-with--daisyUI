@@ -38,10 +38,6 @@
       font-family: 'Lato', sans-serif;
     }
 
-    .hide {
-      display: none;
-    }
-
     .deal-card {
       border: 1px solid rgba(18, 18, 18, 0.10);
     }
@@ -202,7 +198,7 @@
 
       </div>
       <!-- position content -->
-      <div class="w-5/6 mx-auto mb-12 -mt-20 rounded-lg shadow-md lg:-mt-30 z-auto relative hide md:hide lg:block">
+      <div class="w-5/6 mx-auto mb-12 -mt-20 rounded-lg shadow-md lg:-mt-30 z-auto relative hidden md:hidden lg:block">
         <div class="flex p-5 bg-red-400 gap-10 justify-center items-center rounded-lg">
           <div>
             <img src="./images/fruit1.png" alt="" srcset="">
@@ -723,17 +719,19 @@
               </div>
               <!-- Choose Item 3 -->
               <div class="w-full flex">
+                <div class="flex-grow w-full pr-4">
+                  <h2 class="text-lg font-bold text-right  mb-2">Integrated Supplier</h2>
+                  <div class="ml-[75%] border-1 h-0.5 w-20 bg-[#12121219] mb-2">
+                  </div>
+                  <p class="text-base text-right">We are your reliable integrated supplier, offering diverse products
+                    and
+                    efficiency.</p>
+                </div>
                 <div
                   class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
                   <i class="fa-solid fa-boxes-packing"></i>
                 </div>
-                <div class="flex-grow w-full pl-4">
-                  <h2 class="text-lg font-bold  mb-2">Integrated Supplier</h2>
-                  <div class="border-1 h-0.5 w-20 bg-[#12121219] mb-2">
-                  </div>
-                  <p class="text-base">We are your reliable integrated supplier, offering diverse products and
-                    efficiency.</p>
-                </div>
+
               </div>
               <!-- Choose Item 4 -->
               <div class="w-full flex">
@@ -750,16 +748,18 @@
               </div>
               <!-- Choose Item 5 -->
               <div class="w-full flex">
+                <div class="flex-grow w-full pr-4">
+                  <h2 class="text-lg font-bold  mb-2 text-right">Sustainable Practice</h2>
+                  <div class="ml-[75%] border-1 h-0.5 w-20 bg-[#12121219] mb-2">
+                  </div>
+                  <p class="text-base text-right">Environmentally conscious actions for a greener and healthier future.
+                  </p>
+                </div>
                 <div
                   class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
                   <i class="fa-solid fa-dove"></i>
                 </div>
-                <div class="flex-grow w-full pl-4">
-                  <h2 class="text-lg font-bold  mb-2">Sustainable Practice</h2>
-                  <div class="border-1 h-0.5 w-20 bg-[#12121219] mb-2">
-                  </div>
-                  <p class="text-base">Environmentally conscious actions for a greener and healthier future.</p>
-                </div>
+
               </div>
               <!-- Choose Item 6 -->
               <div class="w-full flex">
@@ -776,16 +776,18 @@
               </div>
               <!-- Choose Item 7 -->
               <div class="w-full flex">
+                <div class="flex-grow w-full pr-4">
+                  <h2 class="text-lg font-bold text-right mb-2">The Benefits Only</h2>
+                  <div class="ml-[75%] border-1 h-0.5 w-20 bg-[#12121219] mb-2">
+                  </div>
+                  <p class="text-base text-right">Discover exclusive advantages—improve life, save money, and achieve
+                    more.</p>
+                </div>
                 <div
                   class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
                   <i class="fa-regular fa-thumbs-up"></i>
                 </div>
-                <div class="flex-grow w-full pl-4">
-                  <h2 class="text-lg font-bold  mb-2">The Benefits Only</h2>
-                  <div class="border-1 h-0.5 w-20 bg-[#12121219] mb-2">
-                  </div>
-                  <p class="text-base">Discover exclusive advantages—improve life, save money, and achieve more.</p>
-                </div>
+
               </div>
             </div>
           </div>
@@ -883,6 +885,7 @@
       </div>
     </section>
   </main>
+  <!-- Footer -->
   <footer class="footer footer-center p-10 bg-[#121212] text-base-content rounded text-white">
     <div class="space-x-2 flex items-center">
       <a><img class="w-8 md:w-10 lg:w-14" src="./images/logo.png" alt="" srcset=""></a>
